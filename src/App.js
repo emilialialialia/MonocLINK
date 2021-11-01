@@ -8,7 +8,7 @@ import { Wrapper } from './components/Styles/StyledApp';
 
 
 // pages
-import Test from './pages/Test';
+import Skills from './pages/Skills';
 import Test2 from './pages/Test2';
 import MonocLINK from './pages/MonocLINK';
 
@@ -26,7 +26,7 @@ function App() {
         <Nav />
         <Switch>
             <Route path='/' exact component={MonocLINK} />
-            <Route path='/test' component={Test} />
+            <Route path='/skills' component={Skills} />
             <Route path='/test2' component={Test2} />
         </Switch>
       </Router>
