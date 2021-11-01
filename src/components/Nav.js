@@ -4,7 +4,7 @@ import {
   Nav,
   NavLink,
   NavMenu,
-} from '../Styles/NavElements';
+} from './Styles/StyledNav';
   
 const NavBar = () => {
   return (
@@ -23,11 +23,6 @@ const NavBar = () => {
       </Nav>
   );
 };
-/**
- * idea:
- * monoclink homepage in center, bigger than the rest
- * pops out of navbar a bit
- * other pages to left and right
- */
+
   
 export default NavBar;

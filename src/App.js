@@ -1,13 +1,25 @@
 import './App.css';
-import Nav from './components/Nav/Nav';
+
+// components & deps
+import Nav from './components/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Wrapper } from './components/Styles/StyledApp';
+
+
+// pages
 import Test from './pages/Test';
 import Test2 from './pages/Test2';
-
-
 import MonocLINK from './pages/MonocLINK';
 
+// colors
+import { colors } from './ColorScheme';
+
+
 function App() {
+  // set body color
+  document.body.style.backgroundColor = colors.lavGrey;
+
   return (
     <div>
       <Router>
