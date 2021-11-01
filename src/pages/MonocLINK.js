@@ -1,4 +1,5 @@
 import React from 'react';
+import LoremBG from '../components/LoremBG';
 
 // components
 import {Header} from  '../components/Styles/StyledMonocLINK'
@@ -9,7 +10,8 @@ const MonocLINK = () => {
 
     return (
         <div>
-            <Header><Typer data='[ "monoc.link;" ]' /></Header>
+            <LoremBG />
+            <Header><Typer data='[ "monoc.link();" ]' /></Header>
         </div>
     );
 };

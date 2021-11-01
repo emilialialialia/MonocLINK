@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {colors} from '../../ColorScheme';
 
 export const Nav = styled.nav`
-  background: ${colors.richBlack};
+  background: ${colors.richBlack}f0;
   height: 8vh;
   display: flex;
   justify-content: space-between;

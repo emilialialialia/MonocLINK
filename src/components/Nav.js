@@ -10,8 +10,8 @@ const NavBar = () => {
   return (
       <Nav>
         <NavMenu>
-          <NavLink to='/test'>
-            test
+          <NavLink to='/skills'>
+            skills
           </NavLink>
           <HomeLink to='/'>
             monoclink
