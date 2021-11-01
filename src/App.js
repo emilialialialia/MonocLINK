@@ -1,11 +1,11 @@
 import './App.css';
 import Nav from './components/Nav/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Test from './components/Test';
-import Test2 from './components/Test2';
+import Test from './pages/Test';
+import Test2 from './pages/Test2';
 
 
-import MonocLINK from './components/MonocLINK';
+import MonocLINK from './pages/MonocLINK';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
         <Nav />
         <Switch>
             <Route path='/' exact component={MonocLINK} />
-            <Route path='' component={Test2} />
+            <Route path='/test' component={Test} />
+            <Route path='/test2' component={Test2} />
         </Switch>
       </Router>
-      <MonocLINK />
     </div>
 
   );
