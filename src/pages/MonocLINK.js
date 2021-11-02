@@ -5,8 +5,8 @@ import LoremBG from '../components/LoremBG';
 import {Header} from  '../components/Styles/StyledMonocLINK'
 import { Typer } from '../components/Typer';
 
-const MonocLINK = () => {
 
+const MonocLINK = () => {
 
     return (
         <div>

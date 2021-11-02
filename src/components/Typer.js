@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 export const Typer = (props) => {
     const dataProp = props.data;
     const defaultText = JSON.parse(props.data);

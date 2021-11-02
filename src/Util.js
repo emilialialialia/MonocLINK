@@ -7,6 +7,4 @@ export const colors = {
     test: "#00FF00"
 };
 
-    
-
 //https://coolors.co/0d1b2a-9067c6-8d86c9-cac4ce-f7ece1

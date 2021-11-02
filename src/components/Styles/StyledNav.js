@@ -1,7 +1,7 @@
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import {colors} from '../../ColorScheme';
+import {colors} from '../../Util';
 
 export const Nav = styled.nav`
   background: ${colors.richBlack}f0;
@@ -17,16 +17,36 @@ export const Nav = styled.nav`
   justify-content: center;
   border-top-right-radius: 1vw;
   border-top-left-radius: 1vw;
+  transition: 0.25s;
+  @media screen and (max-width: 350px) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 `;
   
 export const NavLink = styled(Link)`
   color: ${colors.blurple};
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: flex;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  text-shadow: 2px 2px ${colors.blurple}33;
+  &.active {
+    color: ${colors.lavGrey};
+  }
+`;
+
+export const NavItem = styled.div`
+  color: ${colors.blurple};
+  font-size: 1.5rem;
+  display: flex;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-shadow: 2px 2px ${colors.blurple}33;
   &.active {
     color: ${colors.lavGrey};
   }
@@ -34,23 +54,36 @@ export const NavLink = styled(Link)`
 
 export const HomeLink = styled(Link)`
   color: ${colors.amethyst};
-  font-size: 1.75rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  text-shadow: 2px 2px ${colors.amethyst}33;
 `;
+
+export const HomeItem = styled.div`
+  color: ${colors.amethyst};
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-shadow: 2px 2px ${colors.amethyst}33;
+`;
+  
   
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
   white-space: nowrap;
-  @media screen and (max-width: 302px) {
-    display: none;
+  @media screen and (max-width: 350px) {
+    display: block;
   }
 `;
   
