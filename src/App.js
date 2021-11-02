@@ -4,16 +4,16 @@ import './App.css';
 import Nav from './components/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Wrapper } from './components/Styles/StyledApp';
-
 
 // pages
 import Skills from './pages/Skills';
-import Test2 from './pages/Test2';
+import Arch from './pages/Arch';
 import MonocLINK from './pages/MonocLINK';
+import API from './pages/API';
+import Games from './pages/Games';
 
 // colors
-import { colors } from './ColorScheme';
+import { colors } from './Util';
 
 
 function App() {
@@ -27,12 +27,14 @@ function App() {
         <Switch>
             <Route path='/' exact component={MonocLINK} />
             <Route path='/skills' component={Skills} />
-            <Route path='/test2' component={Test2} />
+            <Route path='/arch' component={Arch} />
+            <Route path='/api' component={API} />
+            <Route path='/games' component={Games} />
         </Switch>
       </Router>
     </div>
-
   );
 }
+
 
 export default App;

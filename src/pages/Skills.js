@@ -1,7 +1,8 @@
 import React from 'react';
 
-// styling
+// components
 import { Header, Body } from '../components/Styles/StyledMonocLINK';
+import { TopGroup } from '../components/Styles/StyledMonocLINK';
 
 // bg?
 import LoremBG from '../components/LoremBG';
@@ -30,11 +31,16 @@ const Skills = () => {
         "Github",
         "UML",
         "ERD",
-        "ASP.NET"
+        "ASP.NET",
+        "Linux",
+        "Arch",
+        "Debian",
+        "Server Management",
+        "Web Development",
     ];
 
     const randomSpacing = () => {
-        const maxSpaces = 200;
+        const maxSpaces = window.screen.availWidth/6;
         return Math.floor(Math.random() * (maxSpaces));
 
     };
@@ -49,21 +55,24 @@ const Skills = () => {
 
     // shuffle skills to be random
     shuffleArray(skills);
-    console.log(randomSpacing(skills[3]))
-    
+
     // put randomized skills into div
     let skillsDiv = [];
     for(let i = 0; i < skills.length; i++){
+
         //push div, random # of spaces, skills[i], then /div
         skillsDiv.push(<div style={{whiteSpace: "pre-wrap"}}>{' '.repeat(randomSpacing()) + skills[i]}</div>);
     };
 
+
     return (
         <div>
             <LoremBG />
-            <Header>monoc.link.getSkills();</Header>
-            <Body>
-            {skillsDiv}
+            <Header>
+                monoc.link.getSkills();
+            </Header>
+            <Body> 
+                {skillsDiv}
             </Body>
         </div>
     );
